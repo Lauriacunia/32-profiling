@@ -1,0 +1,292 @@
+Statistical profiling result from isolate-0x5588650-50607-v8.log, (42230 ticks, 8 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  11814   28.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+     44    0.1%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+      4    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+      2    0.0%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   1489    3.5%    4.9%  LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    228    0.5%    0.8%  LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+    181    0.4%    0.6%  LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:2048:35
+    164    0.4%    0.5%  LazyCompile: *value node:internal/console/constructor:258:20
+    139    0.3%    0.5%  LazyCompile: *log node:internal/console/constructor:359:6
+    134    0.3%    0.4%  LazyCompile: *formatValue node:internal/util/inspect:745:21
+    102    0.2%    0.3%  LazyCompile: *onwrite node:internal/streams/writable:425:17
+     85    0.2%    0.3%  LazyCompile: *esPrimo file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:9:17
+     84    0.2%    0.3%  LazyCompile: *getColorDepth node:internal/tty:106:23
+     69    0.2%    0.2%  LazyCompile: *formatWithOptions node:internal/util/inspect:2024:27
+     55    0.1%    0.2%  LazyCompile: *once node:events:660:44
+     53    0.1%    0.2%  LazyCompile: *get node:internal/console/constructor:203:14
+     21    0.0%    0.1%  LazyCompile: *removeListener node:events:689:28
+     21    0.0%    0.1%  LazyCompile: *_addListener node:events:555:22
+      8    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/console/constructor:339:10
+      6    0.0%    0.0%  Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+      5    0.0%    0.0%  LazyCompile: *inspect node:internal/util/inspect:292:17
+      4    0.0%    0.0%  LazyCompile: *Socket._write node:net:828:35
+      4    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      3    0.0%    0.0%  LazyCompile: *writeGeneric node:internal/stream_base_commons:147:22
+      3    0.0%    0.0%  LazyCompile: *formatPrimitive node:internal/util/inspect:1519:25
+      3    0.0%    0.0%  Function: ^removeListener node:events:689:28
+      2    0.0%    0.0%  LazyCompile: *checkListener node:events:258:23
+      2    0.0%    0.0%  LazyCompile: *afterWrite node:internal/streams/writable:487:20
+      2    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:487:20
+      2    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      2    0.0%    0.0%  Function: ^_addListener node:events:555:22
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~]))
+      1    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    0.0%  LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      1    0.0%    0.0%  Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:300:20
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:258:20
+      1    0.0%    0.0%  Function: ^stylizeWithColor node:internal/util/inspect:540:26
+      1    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:425:17
+      1    0.0%    0.0%  Function: ^groupArrayElements node:internal/util/inspect:1338:28
+      1    0.0%    0.0%  Function: ^getObserverType node:internal/perf/observe:116:25
+      1    0.0%    0.0%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.0%    0.0%  Function: ^formatWithOptionsInternal node:internal/util/inspect:2048:35
+      1    0.0%    0.0%  Function: ^formatValue node:internal/util/inspect:745:21
+      1    0.0%    0.0%  Function: ^formatProperty node:internal/util/inspect:1810:24
+      1    0.0%    0.0%  Function: ^formatPrimitive node:internal/util/inspect:1519:25
+      1    0.0%    0.0%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1    0.0%    0.0%  Function: ^addListener node:events:618:58
+      1    0.0%    0.0%  Function: ^Socket._write node:net:828:35
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:236:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/console/constructor:339:10
+
+ [C++]:
+   ticks  total  nonlib   name
+  27221   64.5%   89.6%  __libc_write
+     54    0.1%    0.2%  __write
+     37    0.1%    0.1%  memcpy
+     23    0.1%    0.1%  fwrite
+     22    0.1%    0.1%  __pthread_cond_wait
+     16    0.0%    0.1%  __pthread_enable_asynccancel
+     15    0.0%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      8    0.0%    0.0%  __lll_lock_wait
+      7    0.0%    0.0%  epoll_pwait
+      7    0.0%    0.0%  __pthread_cond_signal
+      7    0.0%    0.0%  __libc_malloc
+      7    0.0%    0.0%  __GI___pthread_mutex_unlock
+      5    0.0%    0.0%  operator delete(void*)
+      5    0.0%    0.0%  getrusage
+      4    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      4    0.0%    0.0%  operator new(unsigned long)
+      3    0.0%    0.0%  __GI___pthread_mutex_lock
+      3    0.0%    0.0%  _IO_file_xsputn
+      2    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      2    0.0%    0.0%  cfree
+      1    0.0%    0.0%  std::locale::id::_M_id() const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)
+      1    0.0%    0.0%  operator new[](unsigned long, std::nothrow_t const&)
+      1    0.0%    0.0%  fputc
+      1    0.0%    0.0%  fflush
+      1    0.0%    0.0%  do_futex_wait.constprop.0
+      1    0.0%    0.0%  __pthread_cond_init
+      1    0.0%    0.0%  __mprotect
+      1    0.0%    0.0%  __clock_gettime
+      1    0.0%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.0%  _IO_setb
+      1    0.0%    0.0%  _IO_default_xsputn
+
+ [Summary]:
+   ticks  total  nonlib   name
+   2891    6.8%    9.5%  JavaScript
+  27467   65.0%   90.5%  C++
+    166    0.4%    0.5%  GC
+  11864   28.1%          Shared libraries
+      8    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  27221   99.5%   64.5%  __libc_write
+     37    0.1%    0.1%  memcpy
+     26    0.1%    0.1%  __write
+     21    0.1%    0.0%  fwrite
+     16    0.1%    0.0%  __pthread_enable_asynccancel
+     11    0.0%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      4    0.0%    0.0%  operator delete(void*)
+      4    0.0%    0.0%  __libc_malloc
+      3    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      3    0.0%    0.0%  operator new(unsigned long)
+      2    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      2    0.0%    0.0%  __lll_lock_wait
+      2    0.0%    0.0%  __GI___pthread_mutex_lock
+      2    0.0%    0.0%  _IO_file_xsputn
+      1    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      1    0.0%    0.0%  std::locale::id::_M_id() const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  operator new[](unsigned long, std::nothrow_t const&)
+      1    0.0%    0.0%  fputc
+      1    0.0%    0.0%  fflush
+      1    0.0%    0.0%  __mprotect
+      1    0.0%    0.0%  __clock_gettime
+      1    0.0%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.0%  __GI___pthread_mutex_unlock
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  27221   64.5%  __libc_write
+  25259   92.8%    LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+  25000   99.0%      LazyCompile: *value node:internal/console/constructor:258:20
+  25000  100.0%        LazyCompile: *log node:internal/console/constructor:359:6
+  25000  100.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+  24588   98.4%            LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    412    1.6%            Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    259    1.0%      Function: ^_write node:internal/streams/writable:283:16
+    259  100.0%        Function: ^Writable.write node:internal/streams/writable:333:36
+    259  100.0%          Function: ^value node:internal/console/constructor:258:20
+    259  100.0%            LazyCompile: *log node:internal/console/constructor:359:6
+   1472    5.4%    LazyCompile: *writeGeneric node:internal/stream_base_commons:147:22
+   1468   99.7%      LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+   1468  100.0%        LazyCompile: *value node:internal/console/constructor:258:20
+   1467   99.9%          LazyCompile: *log node:internal/console/constructor:359:6
+   1467  100.0%            /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    490    1.8%    LazyCompile: *Socket._write node:net:828:35
+    490  100.0%      Function: ^writeOrBuffer node:internal/streams/writable:365:23
+    467   95.3%        LazyCompile: *value node:internal/console/constructor:258:20
+    467  100.0%          LazyCompile: *log node:internal/console/constructor:359:6
+    467  100.0%            /home/laura/.nvm/versions/node/v16.15.1/bin/node
+     23    4.7%        Function: ^_write node:internal/streams/writable:283:16
+     23  100.0%          Function: ^Writable.write node:internal/streams/writable:333:36
+     23  100.0%            Function: ^value node:internal/console/constructor:258:20
+
+  11814   28.0%  /home/laura/.nvm/versions/node/v16.15.1/bin/node
+   7204   61.0%    /home/laura/.nvm/versions/node/v16.15.1/bin/node
+   4964   68.9%      LazyCompile: *getColorDepth node:internal/tty:106:23
+   4956   99.8%        LazyCompile: *log node:internal/console/constructor:359:6
+   4956  100.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+   4631   93.4%            LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    324    6.5%            Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    520    7.2%      LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+    519   99.8%        LazyCompile: *value node:internal/console/constructor:258:20
+    519  100.0%          LazyCompile: *log node:internal/console/constructor:359:6
+    519  100.0%            /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    480    6.7%      LazyCompile: *log node:internal/console/constructor:359:6
+    480  100.0%        /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    449   93.5%          LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    306   68.2%            Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    143   31.8%            LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     31    6.5%          Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     31  100.0%            LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    398    5.5%      LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    291   73.1%        Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    291  100.0%          Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+    291  100.0%            Function: ^trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    107   26.9%        LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     86   80.4%          Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     45   52.3%            Function: ^trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+     41   47.7%            LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+     21   19.6%          LazyCompile: ~handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     21  100.0%            LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    178    2.5%      LazyCompile: *once node:events:660:44
+    176   98.9%        LazyCompile: *value node:internal/console/constructor:258:20
+    176  100.0%          LazyCompile: *log node:internal/console/constructor:359:6
+    176  100.0%            /home/laura/.nvm/versions/node/v16.15.1/bin/node
+      2    1.1%        Function: ^value node:internal/console/constructor:258:20
+      2  100.0%          LazyCompile: *log node:internal/console/constructor:359:6
+      2  100.0%            /home/laura/.nvm/versions/node/v16.15.1/bin/node
+     99    1.4%      Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     99  100.0%        LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     99  100.0%          LazyCompile: ~handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     99  100.0%            LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    973    8.2%    LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    680   69.9%      Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    680  100.0%        Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+    680  100.0%          Function: ^trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    680  100.0%            Function: ^<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+    293   30.1%      LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    244   83.3%        Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+    126   51.6%          LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+     83   65.9%            Function: ^<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+     43   34.1%            LazyCompile: ~<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+    118   48.4%          Function: ^trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    118  100.0%            Function: ^<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+     49   16.7%        LazyCompile: ~handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     49  100.0%          LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+     49  100.0%            LazyCompile: ~<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+    968    8.2%    LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+    962   99.4%      LazyCompile: *value node:internal/console/constructor:258:20
+    962  100.0%        LazyCompile: *log node:internal/console/constructor:359:6
+    962  100.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    925   96.2%            LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     37    3.8%            Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    749    6.3%    LazyCompile: *log node:internal/console/constructor:359:6
+    749  100.0%      /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    707   94.4%        LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    503   71.1%          Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    503  100.0%            Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+    204   28.9%          LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    170   83.3%            Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     34   16.7%            LazyCompile: ~handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     42    5.6%        Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     42  100.0%          LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     42  100.0%            LazyCompile: ~handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+    547    4.6%    LazyCompile: *value node:internal/console/constructor:258:20
+    545   99.6%      LazyCompile: *log node:internal/console/constructor:359:6
+    545  100.0%        /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    506   92.8%          LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    362   71.5%            Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    144   28.5%            LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     39    7.2%          Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     39  100.0%            LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    255    2.2%    LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:2048:35
+    255  100.0%      LazyCompile: *formatWithOptions node:internal/util/inspect:2024:27
+    255  100.0%        LazyCompile: *log node:internal/console/constructor:359:6
+    255  100.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    240   94.1%            LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     15    5.9%            Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    214    1.8%    LazyCompile: *formatValue node:internal/util/inspect:745:21
+    212   99.1%      LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:2048:35
+    212  100.0%        LazyCompile: *formatWithOptions node:internal/util/inspect:2024:27
+    212  100.0%          LazyCompile: *log node:internal/console/constructor:359:6
+    212  100.0%            /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    182    1.5%    LazyCompile: *once node:events:660:44
+    180   98.9%      LazyCompile: *value node:internal/console/constructor:258:20
+    180  100.0%        LazyCompile: *log node:internal/console/constructor:359:6
+    180  100.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    180  100.0%            LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+      2    1.1%      Function: ^value node:internal/console/constructor:258:20
+      2  100.0%        LazyCompile: *log node:internal/console/constructor:359:6
+      2  100.0%          /home/laura/.nvm/versions/node/v16.15.1/bin/node
+      2  100.0%            LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+    136    1.2%    LazyCompile: *getColorDepth node:internal/tty:106:23
+    136  100.0%      LazyCompile: *log node:internal/console/constructor:359:6
+    136  100.0%        /home/laura/.nvm/versions/node/v16.15.1/bin/node
+    121   89.0%          LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     79   65.3%            Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     42   34.7%            LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+     15   11.0%          Function: ^listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+     15  100.0%            LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+
+   1489    3.5%  LazyCompile: *listarNumerosPrimos file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:16:29
+   1029   69.1%    Function: ^<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+   1029  100.0%      Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+   1029  100.0%        Function: ^trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+   1029  100.0%          Function: ^<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+   1029  100.0%            Function: ^process_params /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:338:47
+    460   30.9%    LazyCompile: ~<anonymous> file:///home/laura/Documentos/coder/clases/32-profiling/serverProfiler.js:31:26
+    361   78.5%      Function: ^handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+    191   52.9%        Function: ^trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    191  100.0%          Function: ^<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+    191  100.0%            Function: ^process_params /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:338:47
+    170   47.1%        LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+    108   63.5%          Function: ^<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+    108  100.0%            Function: ^process_params /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:338:47
+     62   36.5%          LazyCompile: ~<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+     62  100.0%            Function: ^process_params /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:338:47
+     99   21.5%      LazyCompile: ~handle /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/layer.js:86:49
+     99  100.0%        LazyCompile: ~trim_prefix /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:293:23
+     99  100.0%          LazyCompile: ~<anonymous> /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:280:64
+     72   72.7%            Function: ^process_params /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:338:47
+     27   27.3%            LazyCompile: ~process_params /home/laura/Documentos/coder/clases/32-profiling/node_modules/express/lib/router/index.js:338:47
+
